@@ -17,10 +17,11 @@ $xl: 1200px;
         gap: 100px;
 
         @media only screen and (max-width: $sm) {
-          gap: 20px;
+          gap: 30px;
         }
         @media only screen and (min-width: $sm) {
           
+          gap: 40px;
         }
         @media only screen and (min-width: $md) {
           
@@ -42,6 +43,7 @@ $xl: 1200px;
             background: #929aab;
 
             
+            
 
             .banner-image
             {
@@ -55,6 +57,19 @@ $xl: 1200px;
         .banner-content
         {
             max-width: 500px;
+
+            @media only screen and (max-width: $sm) {
+              
+            }
+            @media only screen and (min-width: $sm) {
+
+              max-width: 450px;
+            }
+            @media only screen and (min-width: $md) {
+            }
+            @media only screen and (min-width: $lg) {
+              
+            }
 
             .banner-content-header{
                 margin: 0;

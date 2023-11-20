@@ -29,7 +29,7 @@ const StyledHeader = styled.h1`
     }
     else if(props.$lg) {
       return css`
-        font-size: 59px;
+        font-size: 50px;
       `
     }
     else if(props.$md) {
