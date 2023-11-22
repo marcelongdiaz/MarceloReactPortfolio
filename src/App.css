@@ -1,13 +1,16 @@
-.App{
+.App
+{
   min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 
-  p, span, a {
+  p, span, a 
+  {
     font-size: 14px;
   }
 
-  * {
+  * 
+  {
     box-sizing: border-box;
   }
 }

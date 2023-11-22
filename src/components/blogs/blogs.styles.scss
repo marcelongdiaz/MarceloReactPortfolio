@@ -1,83 +1,89 @@
 $sm: 600px;
 $md: 768px;
-$lg: 992px;
+$lg: 1118px;
 $xl: 1200px;
 
-.blogs-content-container{
-  
+.blogs-content-container
+{
   padding: 40px 0;
   margin: auto;
 }
-.blogs-list{
+.blogs-list
+{
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     
-    @media only screen and (max-width: $sm) {
+    @media only screen and (max-width: $sm) 
+    {
       flex-wrap: nowrap;
       overflow: scroll;
       gap: 20px;
     }
-    @media only screen and (min-width: $sm) {
+    @media only screen and (min-width: $sm) 
+    {
       
     }
-    @media only screen and (min-width: $md) {
+    @media only screen and (min-width: $md) 
+    {
       
     }
-    @media only screen and (min-width: $lg) {
+    @media only screen and (min-width: $lg) 
+    {
       
     }
-    .blog-item {
+    .blog-item 
+    {
       max-width: 300px;
       max-height: 300px;
       padding: 0px;
   
       .blog-image-container
       {
-          width: 300px;
-          height: 150px;
-          overflow: hidden;
-          border-radius: 15px;
-  
-          .blog-image
-          {   
-              object-fit: cover;
-              width: 100%;
-              height: 100%;
-          }
+        width: 300px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 15px;
+
+        .blog-image
+        {   
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
   
       }
   
       .blog-title{
-          margin: 9px 0px;
-          font-size: 16px;
-          color: #393e46;
+        margin: 9px 0px;
+        font-size: 16px;
+        color: #393e46;
       }
   
       .blog-date {
-          font-size: 14px;
-          color: #393e46;
-          opacity: 80%;
+        font-size: 14px;
+        color: #393e46;
+        opacity: 80%;
       }
   
       .blog-tag-container {
-          display: flex;
-          flex-wrap: nowrap;
-          gap: 5px;
-          margin: 6px 0px;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 5px;
+        margin: 6px 0px;
       }
   
       .blog-description {
-          font-size: 16px;
-          color: #393e46;
-          height: 39px;
-          max-height: 39px;
-          overflow: hidden;
+        font-size: 16px;
+        color: #393e46;
+        height: 39px;
+        max-height: 39px;
+        overflow: hidden;
       }
   }
 }
 
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }

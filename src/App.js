@@ -1,17 +1,21 @@
 import Navigation from "./components/navigation/navigation.component";
+import { Route, Routes } from 'react-router-dom'
+import Home from "./routes/Home/home.component";
+
 import './App.css';
-import Banner from "./components/banner/banner.component";
 import Projects from "./components/projects/projects.component";
 import Blogs from "./components/blogs/blogs.component";
-import Footer from "./components/footer/footer.component";
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <Navigation/>
-      <Banner/>
-      <Projects/>
-      <Blogs/>
-      <Footer/>
+      
+      <Routes>
+        <Route path='/' element={<Navigation/>}>
+          <Route index='1' element={<Home/>}/>
+          <Route path='/projects' element={<Projects/>}/>
+          <Route path='/blogs' element={<Blogs/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }

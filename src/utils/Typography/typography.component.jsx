@@ -8,21 +8,21 @@ const globalColor = '#393e46';
 
 const customCss = css`
   color: red;
-`
+`;
 
 const StyledSpan = styled.span`
     font-size: 14px;
     font-family: 'Montserrat', san-serif;
     color: ${globalColor};
-`
+`;
 
 const StyledHeader = styled.h1`
   font-size: 50px;
   font-weight: bolder;
   color: ${globalColor};
 
-  ${(props)=> {
-    if(props.$sm){
+  ${(props) => {
+    if(props.$sm) {
       return css`
         font-size: 20px;
       `
@@ -38,14 +38,14 @@ const StyledHeader = styled.h1`
       `
     }
   }}
-`
+`;
 
 const StyledTitle = styled.h1`
   font-size: 30px;
   font-weight: bolder;
   color: ${globalColor};
 
-  ${(props)=> {
+  ${(props) => {
     if(props.$sm){
       return css`
         font-size: 20px;
@@ -62,7 +62,7 @@ const StyledTitle = styled.h1`
       `
     }
   }}
-`
+`;
 
 
 const StyledSubheader = styled.h2`
@@ -71,7 +71,7 @@ const StyledSubheader = styled.h2`
   opacity: 80%;
   font-weight: bold;
 
-  ${(props)=> {
+  ${(props) => {
     if(props.$sm){
       return css`
         font-size: 13px;
@@ -88,12 +88,12 @@ const StyledSubheader = styled.h2`
       `
     }
   }}
-`
+`;
 
 const StyledParagraph = styled.p`
   font-size: 16px;
   color: #393e46;
-`
+`;
 const typographyHandler = (_type, _params, _children, sm, md, lg) => {
   switch(_type){
     case "p": 
@@ -112,14 +112,12 @@ const typographyHandler = (_type, _params, _children, sm, md, lg) => {
 }
 
 const Typography = ({textType, children, ...parameters}) => {
-
-  
   // const md = useMediaQuery({ minWidth: 1224 });
   // const lg = useMediaQuery({ minWidth: 1824 });
   const sm = useMediaQuery({ maxWidth: 850 });
   const md = useMediaQuery({ minWidth: 850 });
   const lg = useMediaQuery({ minWidth: 1224 });
-  console.log(md)
+
   return (
     <>
       { typographyHandler(textType, parameters, children, sm, md, lg) }

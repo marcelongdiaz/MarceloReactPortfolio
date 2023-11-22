@@ -1,6 +1,7 @@
+import Container from './../../utils/Container/container.component';
+import Tag from './../../utils/Tag/tag.component';
 import './blogs.styles.scss';
-import Container from './../../utils/Container/container.component'
-import Tag from './../../utils/Tag/tag.component'
+
 const blogsImages = require.context("./../../assets/dist/blogs", true);
 const images = blogsImages.keys().map(blogImage => blogsImages(blogImage));
 const blogsDocument = [
@@ -45,51 +46,49 @@ const blogsDocument = [
 const Blogs = () => {
     console.log(images)
     return(
-        <div className="blogs">
-          {/* <div className="section-container"> */}
-          <Container>
-            <div className="blogs-content-container">
-              <div className="section-header">
-                      <h2 className="section-header-title">Blogs</h2>
-                      <a href="/projects" className="btn-see-all">See all →</a>
-              </div>
-              <div className="blogs-list">
-                {
-                  blogsDocument.map((item, index) => {
-                    return(
-                      <div className="blog-item" key={`blog-index-${index}`}>
-                        <div className="blog-image-container">
-                            <img src={images[index]} alt="" className="blog-image"/>
-                        </div>
-
-                        <h4 className="blog-title">
-                            {item.title}
-                        </h4>
-
-                        <span className="blog-date"> { item.publishedDate } </span>
-
-                        <div className="blog-tag-container">
-                            {
-                                item.tags.map((tag, tagIndex) => {
-                                    return(
-                                        <Tag tagLabel={tag} key={tagIndex} />
-                                    )
-                                })
-                            }
-                            
-                        </div>
-
-                        <div className="blog-description">
-                            {item.description}
-                        </div>
-                      </div>
-                    )
-                  })
-                }
-              </div>
+      <div className="blogs">
+        <Container>
+          <div className="blogs-content-container">
+            <div className="section-header">
+              <h2 className="section-header-title">Blogs</h2>
+              <a href="/projects" className="btn-see-all">See all →</a>
             </div>
-          </Container>
-        </div>
+            <div className="blogs-list">
+              {
+                blogsDocument.map((item, index) => {
+                  return(
+                    <div className="blog-item" key={`blog-index-${index}`}>
+                      <div className="blog-image-container">
+                          <img src={images[index]} alt="" className="blog-image"/>
+                      </div>
+
+                      <h4 className="blog-title">
+                          {item.title}
+                      </h4>
+
+                      <span className="blog-date"> { item.publishedDate } </span>
+
+                      <div className="blog-tag-container">
+                        {
+                          item.tags.map((tag, tagIndex) => {
+                            return(
+                              <Tag tagLabel={tag} key={tagIndex} />
+                            )
+                          })
+                        } 
+                      </div>
+
+                      <div className="blog-description">
+                        {item.description}
+                      </div>
+                    </div>
+                  )
+                })
+              }
+            </div>
+          </div>
+        </Container>
+      </div>
     )
 }
 

@@ -1,96 +1,98 @@
-#navigation{
-    
-    background: rgba(255, 255, 255, 0.88);
-    top: 0;
-    position: sticky;
-    z-index: 10;
-    .navigation-content-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items:center;
-        width: 100%;
-    }
-    
-
-    .navigation-logo-container {
-      max-width: 185px;
-      width: 100%;
-      padding: 15px 0;
-      img{
-        height: 30px;
-        opacity: 60%;
-      }
-    }
-}
-
-.navigation-links-container{
-    display: inline-flex;
+#navigation
+{    
+  background: rgba(255, 255, 255, 0.88);
+  top: 0;
+  position: sticky;
+  z-index: 10;
+  
+  .navigation-content-container 
+  {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 380px;
+    align-items:center;
     width: 100%;
-    a.navigation-link {
-        padding: 30px 0px;
-        // padding: 30px 15px;
-        text-decoration: none!important;
-        color: #393e46;
-        font-weight: 600;
-        transition: 0.4s ease;
-
-        // &:hover {
-        //     background: #393e4659!important;
-        //     border-radius: 0px 0px 15px 15px!important;
-        // }
+  }
+  
+  .navigation-logo-container 
+  {
+    max-width: 185px;
+    width: 100%;
+    padding: 15px 0;
+    
+    img
+    {
+      height: 30px;
+      opacity: 60%;
     }
+  }
+}
+
+.navigation-links-container
+{
+  display: inline-flex;
+  justify-content: space-between;
+  max-width: 380px;
+  width: 100%;
+
+  a.navigation-link 
+  {
+    padding: 30px 0px;
+    text-decoration: none!important;
+    color: #393e46;
+    font-weight: 600;
+    transition: 0.4s ease;
+  }
     
 }
 
-.drawer {
+.drawer
+{
   position: fixed;
   top: 0;
   right: 0%;
   z-index: 999;
-  // max-width: 300px;
   width: 100%;
   transition: 0.6s ease;
   height: 100vh;
   background: whitesmoke;
 
-  .navigation-links-container-mobile {
+  .navigation-links-container-mobile 
+  {
     width: 100%;
     display: flex;
     flex-direction: column;
 
-    .action-button {
+    .action-button 
+    {
       padding: 5px 10px;
       text-align: right;
       display: flex;
       justify-content: space-between;
 
-      .navigation-logo-container {
+      .navigation-logo-container 
+      {
         max-width: 150px;
         width: 100%;
         padding: 15px 0;
         text-align: left;
         padding-left: 10px;
-        img{
+        
+        img
+        {
           height: 30px;
           opacity: 60%;
         }
       }
     }
 
-
-    .navigation-link {
+    .navigation-link 
+    {
       padding: 20px 20px;
-      // padding: 30px 15px;
       text-decoration: none!important;
       color: #393e46;
       font-weight: 600;
       transition: 0.4s ease;
     }
   }
-  
-
-
 }

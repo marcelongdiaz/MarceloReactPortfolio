@@ -5,116 +5,110 @@ $xl: 1200px;
 
 .banner 
 {
-    display: block;
-    padding: 100px 0px ;
+  display: block;
+  padding: 100px 0px ;
 
-    .banner-content-container
+  .banner-content-container
+  {
+    display: flex;  
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    gap: 100px;
+
+    @media only screen and (max-width: $sm) 
     {
-        display: flex;  
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        gap: 100px;
-
-        @media only screen and (max-width: $sm) {
-          gap: 30px;
-        }
-        @media only screen and (min-width: $sm) {
-          
-          gap: 40px;
-        }
-        @media only screen and (min-width: $md) {
-          
-        }
-        @media only screen and (min-width: $lg) {
-          
-        }
-        
-
-        .banner-image-container
-        {
-            display: block;
-            position: relative;
-            border-radius: 50%;
-            // height: 299px;
-            width: 100%;
-            max-width: 299px;
-            overflow: hidden;
-            background: #929aab;
-
-            
-            
-
-            .banner-image
-            {
-                object-fit: cover;
-                height: 100%;
-                width: 100%; 
-            }
-            
-        }
-
-        .banner-content
-        {
-            max-width: 500px;
-
-            @media only screen and (max-width: $sm) {
-              
-            }
-            @media only screen and (min-width: $sm) {
-
-              max-width: 450px;
-            }
-            @media only screen and (min-width: $md) {
-            }
-            @media only screen and (min-width: $lg) {
-              
-            }
-
-            .banner-content-header{
-                margin: 0;
-            }
-            .banner-content-subheader
-            {
-                
-                margin-top: 0;
-                margin-bottom: 18px;
-
-                
-                
-            }
-            .banner-content-description
-            {
-                font-size: 16px;
-                color: #393e46;
-                margin: 40px 0;
-                
-                @media only screen and (max-width: $sm) {
-                  margin: 20px 0;
-                  font-size: 13px;
-                }
-                @media only screen and (min-width: $sm) {
-                  margin: 20px 0;
-                  font-size: 14px ;
-                }
-                @media only screen and (min-width: $md) {
-                  margin: 30px 0;
-                }
-                @media only screen and (min-width: $lg) {
-                  margin: 40px 0;
-                }
-            }
-
-            button.standard-button {
-                padding: 7px 23px;
-                outline: none;
-                border: none;
-                background-color: #393e46;;
-                border-radius: 15px;
-                color: #f7f7f7;
-                text-align: center;
-            }
-        }
+      gap: 30px;
     }
+    @media only screen and (min-width: $sm) 
+    {
+      gap: 40px;
+    }
+    @media only screen and (min-width: $md) {
+      
+    }
+    @media only screen and (min-width: $lg) {
+      
+    }
+    
+    .banner-image-container
+    {
+      display: block;
+      position: relative;
+      border-radius: 50%;
+      width: 100%;
+      max-width: 299px;
+      overflow: hidden;
+      background: #929aab;
+
+      .banner-image
+      {
+        object-fit: cover;
+        height: 100%;
+        width: 100%; 
+      }
+        
+    }
+
+    .banner-content
+    {
+      max-width: 500px;
+
+      @media only screen and (max-width: $sm) {
+        
+      }
+      @media only screen and (min-width: $sm) {
+
+        max-width: 450px;
+      }
+      @media only screen and (min-width: $md) {
+      }
+      @media only screen and (min-width: $lg) {
+        
+      }
+
+      .banner-content-header{
+          margin: 0;
+      }
+      .banner-content-subheader
+      {
+          
+          margin-top: 0;
+          margin-bottom: 18px;
+
+      }
+      .banner-content-description
+      {
+          font-size: 16px;
+          color: #393e46;
+          margin: 40px 0;
+          
+          @media only screen and (max-width: $sm) {
+            margin: 20px 0;
+            font-size: 13px;
+          }
+          @media only screen and (min-width: $sm) {
+            margin: 20px 0;
+            font-size: 14px ;
+          }
+          @media only screen and (min-width: $md) {
+            margin: 30px 0;
+          }
+          @media only screen and (min-width: $lg) {
+            margin: 40px 0;
+          }
+      }
+
+      button.standard-button {
+          padding: 7px 23px;
+          outline: none;
+          border: none;
+          background-color: #393e46;;
+          border-radius: 15px;
+          color: #f7f7f7;
+          text-align: center;
+      }
+    }
+  }
     
 }

@@ -1,25 +1,32 @@
-.util-btn {
-    transition: 0.2s ease;
+.util-btn 
+{
+  transition: 0.2s ease;
 
-    &.util-btn-light{
-      &:hover {
-          background-color: rgb(27 28 28)!important;
-  
+    &.util-btn-light
+    {
+      &:hover 
+      {
+        background-color: rgb(27 28 28)!important;
       }
-  }
+    }
   
   
-  &.util-btn-dark{
-      &:hover {
-          background-color: rgb(218, 218, 218)!important;
-      }
+  &.util-btn-dark
+  {
+    &:hover 
+    {
+      background-color: rgb(218, 218, 218)!important;
+    }
   }
 
-  &.no-hover {
-    &:focus {
+  &.no-hover
+  {
+    &:focus 
+    {
       outline: none;
     }
-    &:hover{
+    &:hover
+    {
       background-color: transparent!important;
     }
   }

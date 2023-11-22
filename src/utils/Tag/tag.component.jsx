@@ -1,5 +1,3 @@
-
-// import './tag.styles.scss';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -11,7 +9,7 @@ const StyledButton = styled.button`
   text-wrap: nowrap;
   border: none;
 `
-const Tag = ( {tagLabel, actionHandler, ...props}) => {
+const Tag = ({ tagLabel, actionHandler, ...props }) => {
   return(
     <StyledButton {...props}> 
       { tagLabel }

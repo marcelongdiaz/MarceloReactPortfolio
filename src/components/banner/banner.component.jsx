@@ -23,36 +23,34 @@ const Banner = () => {
         alert('banner button clicked')
     }
     return(
-        <div className="banner">
-            {/* <div className="banner-content-container"> */}
-                <Container>
-                    <div className="banner-content-container">
-                        <StyledBannerImage src={BannerImage} className="banner-image-container" $screensz={sm?'sm':''}>
-                            <img src={BannerImage} alt="" className='banner-image'/>
-                            {/* < alt="" className='banner-image' > */}
-                        </StyledBannerImage>
-                        <div className="banner-content">
-                            <Typography textType='header' className="banner-content-header">
-                              Marcelo Diaz Jr
-                            </Typography>
-                            <Typography textType='subheader' className="banner-content-subheader">
-                              Software Engineer | Designer
-                            </Typography>
-                            <Typography textType='p' className="banner-content-description">
-                                Looking for a good website to leverage your brand? Hit me up, and let’s create something cool. 
-                            </Typography>
-                            <Button 
-                                label='See my projects  →' 
-                                sz='md' 
-                                isRounded={true} 
-                                theme='light'
-                                onClick={bannerClickEvent}
-                            />
-                        </div>
-                    </div>
-                </Container>
-            {/* </div> */}
-        </div>
+      <div className="banner">
+        <Container>
+          <div className="banner-content-container">
+            <StyledBannerImage src={BannerImage} className="banner-image-container" $screensz={sm?'sm':''}>
+              <img src={BannerImage} alt="" className='banner-image'/>
+              {/* < alt="" className='banner-image' > */}
+            </StyledBannerImage>
+            <div className="banner-content">
+              <Typography textType='header' className="banner-content-header">
+                Marcelo Diaz Jr
+              </Typography>
+              <Typography textType='subheader' className="banner-content-subheader">
+                Software Engineer | Designer
+              </Typography>
+              <Typography textType='p' className="banner-content-description">
+                Looking for a good website to leverage your brand? Hit me up, and let’s create something cool. 
+              </Typography>
+              <Button 
+                label='See my projects  →' 
+                sz='md' 
+                isRounded={true} 
+                theme='light'
+                onClick={bannerClickEvent}
+              />
+            </div>
+          </div>
+        </Container>
+      </div>
     )
 }
 
